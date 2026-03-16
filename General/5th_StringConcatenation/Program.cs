@@ -2,19 +2,30 @@
 
 namespace StringConcatenation
 {
+   using System;
+
     class Program
     {
         static void Main()
         {
-            string firstName = "Bob";
-            string greeting = "Hello";
+            // -----------------------------------------
+            // Escape Sequences in C#
+            // -----------------------------------------
 
-            // Combining strings using +
-            Console.WriteLine(greeting + " " + firstName + "!");
+            // \n → New line
+            Console.WriteLine("Hello\nWorld!");
 
-            int messages = 3;
+            // \t → Tab space
+            Console.WriteLine("Hello\tWorld!");
 
-            Console.WriteLine("You have " + messages + " new messages.");
+            // \" → Display double quotes inside a string
+            Console.WriteLine("He said \"C# is awesome!\"");
+
+            // \\ → Display backslash
+            Console.WriteLine("File path: c:\\source\\repos");
+
+            // Combining multiple escape sequences
+            Console.WriteLine("\nLearning\tC#\nEscape\tSequences");
         }
     }
 }

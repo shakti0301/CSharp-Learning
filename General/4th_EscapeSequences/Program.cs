@@ -4,19 +4,26 @@ namespace EscapeSequences
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-                    // New line example
-        Console.WriteLine("Hello\nWorld!");
+            // -----------------------------------------
+            // Escape Sequences in C#
+            // -----------------------------------------
 
-        // Tab example
-        Console.WriteLine("Hello\tWorld!");
+            // \n → New line
+            Console.WriteLine("Hello\nWorld!");
 
-        // Double quotes inside string
-        Console.WriteLine("Hello \"C#\"!");
+            // \t → Tab space
+            Console.WriteLine("Hello\tWorld!");
 
-        // Backslash example (file path)
-        Console.WriteLine("c:\\source\\repos");
+            // \" → Display double quotes inside a string
+            Console.WriteLine("He said \"C# is awesome!\"");
+
+            // \\ → Display backslash
+            Console.WriteLine("File path: c:\\source\\repos");
+
+            // Combining multiple escape sequences
+            Console.WriteLine("\nLearning\tC#\nEscape\tSequences");
         }
     }
 }
