@@ -9,23 +9,37 @@ namespace StringConcatenation
         static void Main()
         {
             // -----------------------------------------
-            // Escape Sequences in C#
+            // String Concatenation in C#
             // -----------------------------------------
 
-            // \n → New line
-            Console.WriteLine("Hello\nWorld!");
+            string firstName = "John";
+            string lastName = "Doe";
 
-            // \t → Tab space
-            Console.WriteLine("Hello\tWorld!");
+            // Using + operator
+            string fullName1 = firstName + " " + lastName;
+            Console.WriteLine("Full Name (using +): " + fullName1);
 
-            // \" → Display double quotes inside a string
-            Console.WriteLine("He said \"C# is awesome!\"");
+            // Using String.Concat method
+            string fullName2 = String.Concat(firstName, " ", lastName);
+            Console.WriteLine("Full Name (using String.Concat): " + fullName2);
 
-            // \\ → Display backslash
-            Console.WriteLine("File path: c:\\source\\repos");
+            // Using String Interpolation (C# 6.0+)
+            string fullName3 = $"{firstName} {lastName}";
+            Console.WriteLine("Full Name (using Interpolation): " + fullName3);
 
-            // Combining multiple escape sequences
-            Console.WriteLine("\nLearning\tC#\nEscape\tSequences");
+            // Combining multiple strings
+            string city = "New York";
+            string country = "USA";
+            string location = $"{city}, {country}";
+            Console.WriteLine("Location: " + location);
+            // Concatenating numbers and strings
+            int age = 30;
+            string ageInfo = "Age: " + age;
+            Console.WriteLine(ageInfo);
+            // Concatenating with method calls
+            string upperName = firstName.ToUpper() + " " + lastName.ToUpper();
+            Console.WriteLine("Uppercase Name: " + upperName);
+            
         }
     }
 }
