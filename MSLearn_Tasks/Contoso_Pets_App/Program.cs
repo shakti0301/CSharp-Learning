@@ -7,7 +7,7 @@ namespace Pets_app
         static void Main()
         {
             string menuSelection = "";
-            string input = Console.ReadLine() ?? "";
+
             Console.WriteLine("Welcome to Contoso Pets App");
 
             int animalCount = 4;
